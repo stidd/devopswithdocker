@@ -14,5 +14,9 @@ docker attach missing-dependencies
 ## 1.5: Sizes of Images
 
 ```bash
+docker exec -it 4bf sh -c 'tail -f ./text.log'
+```
+
+```bash
 Secret message is: 'You can find the source code here: https://github.com/docker-hy'
 ```
