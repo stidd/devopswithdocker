@@ -37,3 +37,15 @@ Give me the password: basics
 You found the correct password. Secret message is:
 "This is the secret message"
 ```
+## 1.7: Two Line Dockerfile
+
+### Dockerfile
+```bash
+FROM devopsdockeruh/simple-web-service:alpine
+CMD server
+```
+### Shell
+```bash
+docker build . -t web-server
+docker run web-server
+```
