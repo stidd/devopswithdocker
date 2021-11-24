@@ -49,3 +49,23 @@ CMD server
 docker build . -t web-server
 docker run web-server
 ```
+
+## 1.8: Image for Script
+
+### Dockerfile
+```bash
+FROM ubuntu:18.04
+
+RUN apt-get update; apt-get install -y curl
+
+COPY image-script.sh .
+
+CMD ./image-script.sh
+```
+
+### Shell
+```bash
+docker build . -t ubuntu:curler
+
+docker run -it ubuntu:curler
+```
