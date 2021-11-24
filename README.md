@@ -9,3 +9,10 @@ docker exec missing-dependencies sh -c 'apt-get update && apt-get -y install cur
 
 docker attach missing-dependencies    
 ```
+
+
+## 1.5: Sizes of Images
+
+```bash
+Secret message is: 'You can find the source code here: https://github.com/docker-hy'
+```
