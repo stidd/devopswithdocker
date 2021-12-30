@@ -76,3 +76,9 @@ docker run -it ubuntu:curler
 ```bash
 docker run -v "$(pwd)/text.log:/usr/src/app/text.log" devopsdockeruh/simple-web-service
 ```
+
+## 1.10: Ports Open
+
+```bash
+docker run -p 8080:8080 web-server
+```
