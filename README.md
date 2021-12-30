@@ -69,3 +69,10 @@ docker build . -t ubuntu:curler
 
 docker run -it ubuntu:curler
 ```
+
+
+## 1.9: Volumes
+
+```bash
+docker run -v "$(pwd)/text.log:/usr/src/app/text.log" devopsdockeruh/simple-web-service
+```
