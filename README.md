@@ -82,3 +82,9 @@ docker run -v "$(pwd)/text.log:/usr/src/app/text.log" devopsdockeruh/simple-web-
 ```bash
 docker run -p 8080:8080 web-server
 ```
+
+Without utilizing the web-server image
+
+```bash
+docker run -d -it -p 8080:8080 --name port-mapping devopsdockeruh/simple-web-service sh -c 'server'
+```
